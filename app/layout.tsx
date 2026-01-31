@@ -15,6 +15,43 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Chrome Green Club",
   description: "Official website of The Chrome Green Club",
+  metadataBase: new URL(`https://${process.env.VERCEL_URL}`),
+  authors: { name: "Ayinde AbdurRahman" },
+  openGraph: {
+    title: "The Chrome Green Club",
+    description: "Official website of The Chrome Green Club",
+    url: "https://thechromegreen.vercel.app",
+    siteName: "The Chrome Green Club",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dbgxwchuy/image/upload/v1769897077/faruq_z6vmuu.png",
+        width: 800,
+        height: 600,
+        alt: "The Chrome Green Club Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Chrome Green Club",
+    description: "Official website of The Chrome Green Club",
+    site: "@chromegreenclub",
+    creator: "@ayinde_dev",
+    images: [
+      "https://res.cloudinary.com/dbgxwchuy/image/upload/v1769897077/faruq_z6vmuu.png",
+    ],
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/apple-touch-icon-precomposed.png",
+    },
+  },
 };
 
 export default function RootLayout({
