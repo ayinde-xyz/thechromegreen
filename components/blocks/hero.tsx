@@ -73,11 +73,15 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <SwiperSlide className="" key={index}>
             <AspectRatio ratio={isMobile ? 9 / 16 : 2.4 / 1.4}>
-              <div
-                style={{
-                  backgroundImage: `url(${isMobile ? slide.mobileImage : slide.image})`,
-                }}
-                className="relative h-full w-full overflow-hidden bg-cover bg-left md:bg-center bg-clip-border">
+              <div className="relative h-full w-full overflow-hidden bg-clip-border">
+                <Image
+                  src={isMobile ? slide.mobileImage : slide.image}
+                  alt={slide.title}
+                  fill
+                  priority
+                  className="object-cover object-left md:object-center"
+                  sizes="100vw"
+                />
                 {/* Modern Dark Gradient Overlay for better readability */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/10"></div>
                 <div className="absolute inset-0 bg-background-green/10 mix-blend-overlay"></div>
