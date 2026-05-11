@@ -78,8 +78,7 @@ const Hero = () => {
                   src={isMobile ? slide.mobileImage : slide.image}
                   alt={slide.title}
                   fill
-                  preload
-                  loading={"eager"}
+                  priority
                   className="object-cover object-left md:object-center"
                   sizes="100vw"
                 />
