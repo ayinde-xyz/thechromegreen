@@ -29,7 +29,7 @@ const AboutUs = () => {
             <p className="text-slate-500">Students Educated</p>
           </div>
           <div>
-            <PersonStanding className="size-10" />
+            <PersonStanding className="size-10 text-background-green" />
           </div>
         </Card>
         <Card className="bg-transparent pl-4 border-background-green flex justify-around  items-center flex-row">
@@ -43,7 +43,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div>
-            <Earth className="size-10" />
+            <Earth className="size-10 text-background-green" />
           </div>
         </Card>
         <Card className="bg-transparent pl-4 border-background-green flex justify-around items-center flex-row">
@@ -55,7 +55,7 @@ const AboutUs = () => {
             <p className="text-slate-500">Active Volunteer</p>
           </div>
           <div>
-            <User className="size-10" />
+            <User className="size-10 text-background-green" />
           </div>
         </Card>
       </div>

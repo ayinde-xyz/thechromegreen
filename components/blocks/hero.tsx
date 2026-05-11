@@ -78,18 +78,38 @@ const Hero = () => {
                   backgroundImage: `url(${isMobile ? slide.mobileImage : slide.image})`,
                 }}
                 className="relative h-full w-full overflow-hidden bg-cover bg-left md:bg-center bg-clip-border">
-                <div className="h-full   bg-linear-to-b  from-background-yellow/10 to-background-green/30 to-95% backdrop-opacity-95   text-center w-full ">
-                  <div className="absolute bottom-3 left-3 w-[70%] text-left flex space-y-2 md:space-y-4 flex-col items-start ml-6 mb-4"></div>
-                </div>
-              </div>
+                {/* Modern Dark Gradient Overlay for better readability */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/10"></div>
+                <div className="absolute inset-0 bg-background-green/10 mix-blend-overlay"></div>
 
-              <div className="absolute bottom-10 left-10 bg-opacity-50 p-6 rounded-md">
-                <h1 className="text-xl md:text-3xl font-bold text-white">
-                  {slide.title}
-                </h1>
-                <p className="text-sm md:text-lg text-white mt-4">
-                  {slide.description}
-                </p>
+                {/* Content Container */}
+                <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-24 md:pb-32 max-w-7xl mx-auto w-full">
+                  <div className="max-w-3xl transform transition-all duration-1000 translate-y-12 opacity-0 in-[.swiper-slide-active]:translate-y-0 in-[.swiper-slide-active]:opacity-100 delay-200">
+                    {/* Badge / Tagline */}
+                    <div className="inline-block px-4 py-1.5 mb-4 md:mb-6 rounded-full bg-background-green/20 border border-background-green/30 backdrop-blur-md">
+                      <span className="text-background-green font-bold text-xs md:text-sm tracking-widest uppercase drop-shadow-sm">
+                        The Chrome Green
+                      </span>
+                    </div>
+
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-4 md:mb-6 drop-shadow-2xl">
+                      {slide.title}
+                    </h1>
+                    <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 md:mb-8 max-w-2xl drop-shadow-lg font-medium leading-relaxed">
+                      {slide.description}
+                    </p>
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-4">
+                      <button className="bg-background-green hover:bg-background-green/90 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-background-green/25 hover:-translate-y-1 active:translate-y-0 duration-300">
+                        Join the Movement
+                      </button>
+                      <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all hover:-translate-y-1 active:translate-y-0 duration-300">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </AspectRatio>
           </SwiperSlide>
