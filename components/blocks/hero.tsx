@@ -14,28 +14,29 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { AspectRatio } from "../ui/aspect-ratio";
+import cloudinaryLoader from "@/utils/image/loader";
 
 const slides = [
   {
     title: "Raising Climate-Smart Leaders for a Green Future",
     description:
       "We are a youth-led environmental movement on a mission to educate and engage communities.",
-    image: "/hero/hero1.jpg",
-    mobileImage: "/hero/hero4.jpg",
+    image: "hero1_ztez5p.jpg",
+    mobileImage: "hero4_za8gsd.jpg",
   },
   {
     title: "Join the Green Revolution",
     description:
       "Discover how The Chrome Green Club is leading the charge towards a sustainable future.",
-    image: "/hero/hero2.jpg",
-    mobileImage: "/hero/hero5.jpg",
+    image: "hero2_ztez5p.jpg",
+    mobileImage: "hero5_ss3vap.jpg",
   },
   {
     title: "Empowering Change, One Step at a Time",
     description:
       "Together, we can create a world where green choices are the norm.",
-    image: "/hero/hero3.jpg",
-    mobileImage: "/hero/hero6.jpg",
+    image: "hero3_tzl6t4.jpg",
+    mobileImage: "hero6_ox5iun.jpg",
   },
 ];
 
@@ -75,10 +76,11 @@ const Hero = () => {
             <AspectRatio ratio={isMobile ? 9 / 16 : 2.4 / 1.4}>
               <div className="relative h-full w-full overflow-hidden bg-clip-border">
                 <Image
+                  loader={cloudinaryLoader}
                   src={isMobile ? slide.mobileImage : slide.image}
                   alt={slide.title}
                   fill
-                  priority
+                  preload
                   className="object-cover object-left md:object-center"
                   sizes="100vw"
                 />
@@ -87,7 +89,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-background-green/10 mix-blend-overlay"></div>
 
                 {/* Content Container */}
-                <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-24 md:pb-32 max-w-7xl mx-auto w-full">
+                <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-24 md:pb-32 max-w-7xl  w-full">
                   <div className="max-w-3xl transform transition-all duration-1000 translate-y-12 opacity-0 in-[.swiper-slide-active]:translate-y-0 in-[.swiper-slide-active]:opacity-100 delay-200">
                     {/* Badge / Tagline */}
                     <div className="inline-block px-4 py-1.5 mb-4 md:mb-6 rounded-full bg-background-green/20 border border-background-green/30 backdrop-blur-md">

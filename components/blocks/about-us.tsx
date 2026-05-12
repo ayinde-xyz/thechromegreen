@@ -2,11 +2,11 @@ import { quicksand } from "@/app/fonts";
 import { Card } from "../ui/card";
 import SlotCounter from "react-slot-counter";
 import { Earth, PersonStanding, User } from "lucide-react";
-import { AspectRatio } from "../ui/aspect-ratio";
+import AboutUsImages from "../img-components/aboutus-images";
 
 const AboutUs = () => {
   return (
-    <section className="min-h-screen py-10 px-5  flex ">
+    <section className="min-h-screen py-10 px-5  flex flex-col md:flex-row gap-10 md:gap-20 items-start justify-center max-w-7xl mx-auto">
       <div className="flex flex-col">
         <div className="space-y-4 mb-5">
           <h1
@@ -53,7 +53,7 @@ const AboutUs = () => {
             <div>
               <p
                 className={`${quicksand.className} text-4xl text-background-green`}>
-                <SlotCounter value={1000} />+
+                <SlotCounter value={100} />+
               </p>
               <p className="text-slate-500">Active Volunteer</p>
             </div>
@@ -63,17 +63,7 @@ const AboutUs = () => {
           </Card>
         </div>
       </div>
-      <div>
-        <Card>
-          <AspectRatio ratio={5 / 2}></AspectRatio>
-        </Card>
-        <Card>
-          <AspectRatio ratio={5 / 2}></AspectRatio>
-        </Card>
-        <Card>
-          <AspectRatio ratio={5 / 2}></AspectRatio>
-        </Card>
-      </div>
+      <AboutUsImages />
     </section>
   );
 };

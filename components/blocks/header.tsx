@@ -4,6 +4,7 @@ import logo from "@/public/icon.png";
 import MainNav from "../skeleton/main-nav";
 import { useEffect, useRef, useState } from "react";
 import { quicksand } from "@/app/fonts";
+import cloudinaryLoader from "@/utils/image/loader";
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -36,7 +37,8 @@ const Header = () => {
       }  flex justify-between items-center w-full bg-background-yellow dark:bg-black border-b border-gray-200 dark:border-gray-800`}>
       <div className="flex items-center">
         <Image
-          src={logo}
+          loader={cloudinaryLoader}
+          src={"logo.png"}
           alt="The Chrome Green Club Logo"
           width={50}
           height={50}

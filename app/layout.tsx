@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     description: "Official website of The Chrome Green Club",
     url: "https://thechromegreen.vercel.app",
     siteName: "The Chrome Green Club",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dbgxwchuy/image/upload/v1778587554/thechromegreen/logo.png",
+        width: 800,
+        height: 600,
+        alt: "The Chrome Green Club Logo",
+      },
+    ],
 
     locale: "en_US",
     type: "website",
@@ -33,7 +41,7 @@ export const metadata: Metadata = {
     site: "@chromegreenclub",
     creator: "@ayinde_dev",
     images: [
-      "https://res.cloudinary.com/dbgxwchuy/image/upload/v1769897077/faruq_z6vmuu.png",
+      "https://res.cloudinary.com/dbgxwchuy/image/upload/v1778587554/thechromegreen/logo.png",
     ],
   },
   icons: {
@@ -72,12 +80,3 @@ export default function RootLayout({
 
 // oklch(0.5985 0.2072 145.59)
 // oklch(0.9267 0.1579 89.47)
-
-// images: [
-//       {
-//         url: "https://res.cloudinary.com/dbgxwchuy/image/upload/v1769897077/faruq_z6vmuu.png",
-//         width: 800,
-//         height: 600,
-//         alt: "The Chrome Green Club Logo",
-//       },
-//     ],
