@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./utils/image/loader.ts",
-    qualities: [25, 50, 75, 100],
   },
 };
 

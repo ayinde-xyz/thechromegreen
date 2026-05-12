@@ -80,6 +80,7 @@ const Hero = () => {
                   src={isMobile ? slide.mobileImage : slide.image}
                   alt={slide.title}
                   fill
+                  quality={isMobile ? 50 : 75}
                   preload
                   className="object-cover object-left md:object-center"
                   sizes="100vw"

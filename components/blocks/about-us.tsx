@@ -6,14 +6,14 @@ import AboutUsImages from "../img-components/aboutus-images";
 
 const AboutUs = () => {
   return (
-    <section className="min-h-screen py-10 px-5  flex flex-col md:flex-row gap-10 md:gap-20 items-start justify-center max-w-7xl mx-auto">
+    <section className="min-h-screen py-10 px-5  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center justify-between max-w-7xl mx-auto">
       <div className="flex flex-col">
         <div className="space-y-4 mb-5">
           <h1
             className={`${quicksand.className} text-5xl text-background-green`}>
             What is The Chrome Green Club?
           </h1>
-          <p className="text-slate-600 md:text-2xl text-lg ">
+          <p className="text-slate-600 md:text-xl text-lg ">
             The ChromeGreen Club is a dynamic, youth-led organization that
             bridges the gap between environmental awareness and community-driven
             change. We aren't just fighting the symptoms of pollution; we are
