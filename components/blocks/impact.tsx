@@ -1,6 +1,8 @@
+"use client";
 import { quicksand } from "@/app/fonts";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import SlotCounter from "react-slot-counter";
+import CountUp from "react-countup";
 
 import {
   FaTrashAlt,
@@ -109,7 +111,7 @@ const OurImpact = () => {
                     <div className="flex items-baseline gap-1 mb-4">
                       <span
                         className={`${quicksand.className} text-4xl md:text-5xl font-extrabold text-base-green`}>
-                        <SlotCounter value={pillar.metric} />
+                        <CountUp end={pillar.metric} duration={3} />
                       </span>
                       <span
                         className={`${quicksand.className} text-2xl font-bold text-base-green`}>

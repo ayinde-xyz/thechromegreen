@@ -2,6 +2,7 @@ import AboutUs from "@/components/blocks/about-us";
 import Hero from "@/components/blocks/hero";
 import OurImpact from "@/components/blocks/impact";
 import Team from "@/components/blocks/team";
+import Faq from "@/components/blocks/faq";
 
 const MainPage = () => {
   return (
@@ -12,6 +13,8 @@ const MainPage = () => {
       <AboutUs />
       {/* {Our Impact} */}
       <OurImpact />
+      {/* {FAQ Section} */}
+      <Faq />
       {/* {Meet Our Team} */}
       <Team />
     </main>
