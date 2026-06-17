@@ -9,8 +9,7 @@ const AboutUs = () => {
     <section className="min-h-screen py-10 px-5  grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center justify-between max-w-7xl mx-auto">
       <div className="flex flex-col">
         <div className="space-y-4 mb-5">
-          <h1
-            className={`${quicksand.className} text-5xl text-background-green`}>
+          <h1 className={`${quicksand.className} text-5xl text-base-green`}>
             What is The Chrome Green Club?
           </h1>
           <p className="text-slate-600 md:text-xl text-lg ">
@@ -22,23 +21,23 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="space-y-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="bg-transparent pl-4 border-background-green flex justify-around flex-row items-center">
+          {/* <Card className="bg-transparent pl-4 border-base-green flex justify-around flex-row items-center">
             <div>
               {" "}
               <p
-                className={`${quicksand.className} text-4xl text-background-green`}>
+                className={`${quicksand.className} text-4xl text-base-green`}>
                 <SlotCounter value={1500} />+
               </p>
               <p className="text-slate-500">Students Educated</p>
             </div>
             <div>
-              <PersonStanding className="size-10 text-background-green" />
+              <PersonStanding className="size-10 text-base-green" />
             </div>
           </Card>
-          <Card className="bg-transparent pl-4 border-background-green flex justify-around  items-center flex-row">
+          <Card className="bg-transparent pl-4 border-base-green flex justify-around  items-center flex-row">
             <div>
               <p
-                className={`${quicksand.className} text-4xl text-background-green`}>
+                className={`${quicksand.className} text-4xl text-base-green`}>
                 <SlotCounter value={10} />+
               </p>
               <p className="text-slate-500">
@@ -46,21 +45,21 @@ const AboutUs = () => {
               </p>
             </div>
             <div>
-              <Earth className="size-10 text-background-green" />
+              <Earth className="size-10 text-base-green" />
             </div>
           </Card>
-          <Card className="bg-transparent pl-4 border-background-green flex justify-around items-center flex-row">
+          <Card className="bg-transparent pl-4 border-base-green flex justify-around items-center flex-row">
             <div>
               <p
-                className={`${quicksand.className} text-4xl text-background-green`}>
+                className={`${quicksand.className} text-4xl text-base-green`}>
                 <SlotCounter value={100} />+
               </p>
               <p className="text-slate-500">Active Volunteer</p>
             </div>
             <div>
-              <User className="size-10 text-background-green" />
+              <User className="size-10 text-base-green" />
             </div>
-          </Card>
+          </Card> */}
         </div>
       </div>
       <AboutUsImages />

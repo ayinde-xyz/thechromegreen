@@ -10,7 +10,7 @@ const AboutUsImages = () => {
 
   return (
     <div className="w-full grid grid-flow-row grid-cols-1 md:grid-cols-3 gap-5">
-      <Card className="py-0 border-background-green border-2 col-span-3 ">
+      <Card className="py-0 border-base-green border-2 col-span-3 ">
         <AspectRatio ratio={4 / 2}>
           <Image
             className="rounded-lg  object-cover"
@@ -22,7 +22,7 @@ const AboutUsImages = () => {
           />
         </AspectRatio>
       </Card>
-      <Card className="py-0 border-background-green border-2 col-span-3 md:col-span-2">
+      <Card className="py-0 border-base-green border-2 col-span-3 md:col-span-2">
         <AspectRatio ratio={4 / 2}>
           <Image
             className="rounded-lg  object-cover"
@@ -34,7 +34,7 @@ const AboutUsImages = () => {
           />
         </AspectRatio>
       </Card>
-      <Card className="py-0 border-background-green border-2 col-span-3 md:col-span-1">
+      <Card className="py-0 border-base-green border-2 col-span-3 md:col-span-1">
         <AspectRatio ratio={isMobile ? 4 / 2 : 2 / 4}>
           <Image
             className="rounded-lg  object-cover"

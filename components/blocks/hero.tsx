@@ -87,14 +87,14 @@ const Hero = () => {
                 />
                 {/* Modern Dark Gradient Overlay for better readability */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/10"></div>
-                <div className="absolute inset-0 bg-background-green/10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-base-green/10 mix-blend-overlay"></div>
 
                 {/* Content Container */}
                 <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-16 lg:px-24 pb-24 md:pb-32 max-w-7xl  w-full">
                   <div className="max-w-3xl transform transition-all duration-1000 translate-y-12 opacity-0 in-[.swiper-slide-active]:translate-y-0 in-[.swiper-slide-active]:opacity-100 delay-200">
                     {/* Badge / Tagline */}
-                    <div className="inline-block px-4 py-1.5 mb-4 md:mb-6 rounded-full bg-background-green/20 border border-background-green/30 backdrop-blur-md">
-                      <span className="text-background-green font-bold text-xs md:text-sm tracking-widest uppercase drop-shadow-sm">
+                    <div className="inline-block px-4 py-1.5 mb-4 md:mb-6 rounded-full bg-base-green/20 border border-base-green/30 backdrop-blur-md">
+                      <span className="text-base-green font-bold text-xs md:text-sm tracking-widest uppercase drop-shadow-sm">
                         The Chrome Green
                       </span>
                     </div>
@@ -108,7 +108,7 @@ const Hero = () => {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4">
-                      <button className="bg-background-green hover:bg-background-green/90 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-background-green/25 hover:-translate-y-1 active:translate-y-0 duration-300">
+                      <button className="bg-base-green hover:bg-base-green/90 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-base-green/25 hover:-translate-y-1 active:translate-y-0 duration-300">
                         Join the Movement
                       </button>
                       <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all hover:-translate-y-1 active:translate-y-0 duration-300">
