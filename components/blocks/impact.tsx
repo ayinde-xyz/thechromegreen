@@ -97,9 +97,6 @@ const OurImpact = () => {
                     className={`p-4 rounded-xl ${pillar.accent} transition-transform duration-300 group-hover:scale-110`}>
                     <Icon className="size-6" />
                   </div>
-                  <div className="text-xs font-semibold tracking-wider text-slate-400 uppercase">
-                    Pillar 0{index + 1}
-                  </div>
                 </CardHeader>
 
                 <CardContent className="p-0 grow flex flex-col justify-between">
