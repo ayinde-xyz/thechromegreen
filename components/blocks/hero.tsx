@@ -59,6 +59,12 @@ const Hero = () => {
   return (
     <section className="   w-full flex  items-center justify-center">
       <Swiper
+        style={{
+          "--swiper-theme-color": "var(--base-green)",
+          "--swiper-navigation-color": "var(--base-green)",
+          "--swiper-pagination-color": "var(--base-green)",
+          "--swiper-navigation-size": isMobile ? "24px" : "44px",
+        } as React.CSSProperties}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
