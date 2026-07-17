@@ -16,7 +16,7 @@ const MainPage = () => {
       {/* {FAQ Section} */}
       <Faq />
       {/* {Meet Our Team} */}
-      <Team />
+      {/* <Team /> */}
     </main>
   );
 };
