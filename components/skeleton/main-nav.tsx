@@ -18,12 +18,12 @@ const MainNav = ({ className }: MainNavProps) => {
     {
       href: "/about",
       label: "About Us",
-      active: pathname === "/about",
+      active: pathname === "/",
     },
     {
       href: "/team",
       label: "Our Team",
-      active: pathname === "/team",
+      active: pathname === "/",
     },
   ];
   return (
