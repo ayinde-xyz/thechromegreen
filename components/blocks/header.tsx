@@ -34,7 +34,7 @@ const Header = () => {
     <header
       className={`fixed z-99 top-0 flex flex-row w-full items-center   justify-between  px-2 py-1 transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      }  flex justify-between items-center w-full bg-[#0b241b] dark:bg-black border-b border-gray-200 dark:border-gray-800`}>
+      }  flex justify-between items-center w-full bg-[#0b241b]`}>
       <div className="flex items-center">
         <Image
           loader={cloudinaryLoader}
