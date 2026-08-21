@@ -39,7 +39,7 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/chromegreen_club?igsh=bWlrNGZtMWhhcXJl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-900/40 text-emerald-100 hover:text-base-yellow hover:bg-emerald-900/60 hover:-translate-y-1 transition-all duration-300"
@@ -55,7 +55,7 @@ const Footer = () => {
                 <FaFacebook className="size-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/chromegreenclub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-900/40 text-emerald-100 hover:text-base-yellow hover:bg-emerald-900/60 hover:-translate-y-1 transition-all duration-300"
@@ -63,7 +63,7 @@ const Footer = () => {
                 <FaTwitter className="size-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/the-chromegreen-club"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-900/40 text-emerald-100 hover:text-base-yellow hover:bg-emerald-900/60 hover:-translate-y-1 transition-all duration-300"
@@ -127,22 +127,22 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:info@thechromegreen.org"
+                  href="mailto:thechrmgreen@gmail.com"
                   className="flex items-center gap-3 text-emerald-100/70 hover:text-base-yellow group transition-colors duration-200">
                   <span className="p-2 rounded-lg bg-emerald-950/60 border border-emerald-900/40 group-hover:bg-emerald-900/60 transition-colors">
                     <Mail className="size-4 text-base-yellow" />
                   </span>
-                  info@thechromegreen.org
+                  thechrmgreen@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+2348087667304"
                   className="flex items-center gap-3 text-emerald-100/70 hover:text-base-yellow group transition-colors duration-200">
                   <span className="p-2 rounded-lg bg-emerald-950/60 border border-emerald-900/40 group-hover:bg-emerald-900/60 transition-colors">
                     <Phone className="size-4 text-base-yellow" />
                   </span>
-                  +1 (234) 567-890
+                  +234 808 766 7304
                 </a>
               </li>
             </ul>
@@ -164,9 +164,9 @@ const Footer = () => {
                   <MapPin className="size-4 text-base-yellow" />
                 </span>
                 <span className="leading-relaxed">
-                  123 Green Valley Lane,
+                  College of Health Science,
                   <br />
-                  Eco-District, CG 45678
+                  University of Ilorin
                 </span>
               </a>
             </div>
