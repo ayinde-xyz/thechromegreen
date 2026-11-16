@@ -29,8 +29,8 @@ const slides = [
     title: "Empowering Change, One Step at a Time",
     description:
       "Together, we can create a world where green choices are the norm.",
-    image: "IMG_1876_aek1cn.jpg",
-    mobileImage: "hero6_ox5iun.jpg",
+    image: "hero3_tzl6t4.jpg",
+    mobileImage: "IMG_1876_aek1cn.jpg",
   },
 ];
 
