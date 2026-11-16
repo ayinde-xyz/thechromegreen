@@ -4,7 +4,7 @@ import { quicksand } from "@/app/fonts";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUp, Heart } from "lucide-react";
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -47,12 +47,12 @@ const Footer = () => {
                 <FaInstagram className="size-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.youtube.com/channel/UCTaHbtG-AW53WcPwVP5OjVQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-900/40 text-emerald-100 hover:text-base-yellow hover:bg-emerald-900/60 hover:-translate-y-1 transition-all duration-300"
                 aria-label="Facebook">
-                <FaFacebook className="size-5" />
+                <FaYoutube className="size-5" />
               </a>
               <a
                 href="https://x.com/chromegreenclub"

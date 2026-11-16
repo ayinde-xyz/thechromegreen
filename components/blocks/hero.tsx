@@ -1,12 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import hero1 from "@/public/hero/hero1.jpg";
-import hero2 from "@/public/hero/hero2.jpg";
-import hero3 from "@/public/hero/hero3.jpg";
-import hero4 from "@/public/hero/hero4.jpg";
-import hero5 from "@/public/hero/hero5.jpg";
-import hero6 from "@/public/hero/hero6.jpg";
 import { useRef } from "react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -22,20 +16,20 @@ const slides = [
     description:
       "We are a youth-led environmental movement on a mission to educate and engage communities.",
     image: "hero1_ztez5p.jpg",
-    mobileImage: "hero4_za8gsd.jpg",
+    mobileImage: "IMG_1971_nj1wbv.jpg",
   },
   {
     title: "Join the Green Revolution",
     description:
       "Discover how The Chrome Green Club is leading the charge towards a sustainable future.",
     image: "hero2_ztez5p.jpg",
-    mobileImage: "hero5_ss3vap.jpg",
+    mobileImage: "IMG_1894_yvzwq6.jpg",
   },
   {
     title: "Empowering Change, One Step at a Time",
     description:
       "Together, we can create a world where green choices are the norm.",
-    image: "hero3_tzl6t4.jpg",
+    image: "IMG_1876_aek1cn.jpg",
     mobileImage: "hero6_ox5iun.jpg",
   },
 ];

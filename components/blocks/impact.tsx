@@ -11,6 +11,7 @@ import {
   FaLongArrowAltRight,
 } from "react-icons/fa";
 import { GiSprout } from "react-icons/gi";
+import Link from "next/link";
 const impactPillars = [
   {
     icon: FaGraduationCap,
@@ -121,10 +122,12 @@ const OurImpact = () => {
                   </div>
 
                   {/* Subtle link indicator */}
-                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-sm font-semibold text-base-green opacit group-hover:opacity-100 transition-opacity duration-300 gap-1.5 cursor-pointer">
-                    View active programs
-                    <FaLongArrowAltRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </div>
+                  <Link href={""}>
+                    <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-sm font-semibold text-base-green opacit group-hover:opacity-100 transition-opacity duration-300 gap-1.5 cursor-pointer">
+                      View active programs
+                      <FaLongArrowAltRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </div>
+                  </Link>
                 </CardContent>
               </Card>
             );
@@ -147,9 +150,11 @@ const OurImpact = () => {
               </p>
             </div>
             <div className="shrink-0">
-              <button className="bg-white hover:bg-base-yellow text-base-green font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 text-center cursor-pointer">
-                Explore Projects
-              </button>
+              <Link href="https://chat.whatsapp.com/CuSjkwPv3Xh30TiAaGKRh0?s=sw&p=a&iam=2">
+                <button className="bg-white hover:bg-base-yellow text-base-green font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 text-center cursor-pointer">
+                  Explore Projects
+                </button>
+              </Link>
             </div>
           </div>
         </div>
