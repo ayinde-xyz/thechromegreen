@@ -83,7 +83,6 @@ const Hero = () => {
                   src={isMobile ? slide.mobileImage : slide.image}
                   alt={slide.title}
                   fill
-                  placeholder="blur"
                   quality={isMobile ? 50 : 75}
                   preload
                   className="object-cover object-left md:object-center"
@@ -113,13 +112,15 @@ const Hero = () => {
                     {/* Action Buttons */}
                     <div className="flex flex-wrap gap-4">
                       <Link href="https://chat.whatsapp.com/CuSjkwPv3Xh30TiAaGKRh0?s=sw&p=a&iam=2">
-                        <button className="bg-base-green hover:bg-base-green/90 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-base-green/25 hover:-translate-y-1 active:translate-y-0 duration-300">
+                        <button className="bg-base-green hover:bg-base-green/90 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-base-green/25 hover:-translate-y-1 active:translate-y-0 duration-300 cursor-pointer">
                           Join the Movement
                         </button>
                       </Link>
-                      <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all hover:-translate-y-1 active:translate-y-0 duration-300">
-                        Learn More
-                      </button>
+                      <Link href="#documentary">
+                        <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-semibold transition-all hover:-translate-y-1 active:translate-y-0 duration-300 cursor-pointer">
+                          Watch Trailer
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

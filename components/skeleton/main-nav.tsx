@@ -13,17 +13,17 @@ const MainNav = ({ className }: MainNavProps) => {
     {
       href: "/",
       label: "Home",
-      active: pathname === "/#home" || pathname === "/",
+      active: pathname === "/",
     },
     {
       href: "/about",
       label: "About Us",
-      active: pathname === "/",
+      active: pathname === "/about",
     },
     {
       href: "/team",
       label: "Our Team",
-      active: pathname === "/",
+      active: pathname === "/team",
     },
   ];
   return (

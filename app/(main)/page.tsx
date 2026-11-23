@@ -1,5 +1,6 @@
 import AboutUs from "@/components/blocks/about-us";
 import Hero from "@/components/blocks/hero";
+import Documentary from "@/components/blocks/documentary";
 import OurImpact from "@/components/blocks/impact";
 import Team from "@/components/blocks/team";
 import Faq from "@/components/blocks/faq";
@@ -11,6 +12,8 @@ const MainPage = () => {
       <Hero />
       {/* {About Us} */}
       <AboutUs />
+      {/* {Featured Documentary Trailer} */}
+      <Documentary />
       {/* {Our Impact} */}
       <OurImpact />
       {/* {FAQ Section} */}

@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="/about"
                   className="inline-block text-emerald-100/70 hover:text-base-yellow hover:translate-x-1 transition-all duration-200">
                   About Us
                 </Link>

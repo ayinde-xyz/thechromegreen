@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/public/icon.png";
 import MainNav from "../skeleton/main-nav";
 import { useEffect, useRef, useState } from "react";
@@ -35,7 +36,7 @@ const Header = () => {
       className={`fixed z-99 top-0 flex flex-row w-full items-center   justify-between  px-2 py-1 transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }  flex justify-between items-center w-full bg-[#0b241b]`}>
-      <div className="flex items-center">
+      <Link href="/" className="flex items-center gap-2">
         <Image
           loader={cloudinaryLoader}
           src={"logo.png"}
@@ -47,7 +48,7 @@ const Header = () => {
           className={`md:text-2xl text-lg text-white font-bold ${quicksand.className}`}>
           The Chrome Green Club
         </h1>
-      </div>
+      </Link>
       <MainNav className="hidden md:block" />
     </header>
   );
