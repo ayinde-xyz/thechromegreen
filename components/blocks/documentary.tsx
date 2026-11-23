@@ -49,7 +49,7 @@ const Documentary = () => {
             <div className="relative w-full aspect-video">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/w-QMrxQvBMU?rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/AVBg0NjIYyo?rel=0&modestbranding=1"
                 title="The Weight of Small Choices — A ChromeGreen Documentary | Official Trailer"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
